@@ -1,5 +1,4 @@
 # A day with Recursion
-February 16, 2021
 
 ## PMI (Principle of Mathematical Induction)
 Let’s assume a function f(n)
