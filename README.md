@@ -62,7 +62,7 @@ void f(int n){
 - At last, main will get destroyed from the stack memory
 
 ## Common pattern question in recursion
-``cpp
+```cpp
 void permutation(char *arr, int i)
 {  // base case
 if(arr[i]=='\0'){
