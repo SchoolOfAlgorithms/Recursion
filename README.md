@@ -60,3 +60,22 @@ void f(int n){
 - Then f(4) will be returned and will print 4 and f(4) will get destroyed from the stack memory
 - Then f(5) will be returned and will print 5 and f(5) will get destroyed from the stack memory
 - At last, main will get destroyed from the stack memory
+
+## Common pattern question in recursion
+``cpp
+void permutation(char *arr, int i)
+{  // base case
+if(arr[i]=='\0'){
+	cout<<arr<<endl;
+	return;
+}
+//solve and recursive case
+for(int j=i;arr[j]!='\0';j++){
+	swap(arr[j], arr[i]);
+	permutation(arr, i+1);
+}
+}
+```
+Now by running this code you guys are thinking that why this code is not giving the correct answer, for this you have to learn backtracking?
+Now there is a question what is backtracking 
+go for the backtracking repository to see the hack.
