@@ -8,10 +8,7 @@ int BinarySearch(int *arr, int l, int r, int key){
 	int mid=(l+r)/2;
 	if(arr[mid]==key)return mid;
 	else if(arr[mid]>key) return BinarySearch(arr, l,mid-1, key);
-	else return BinarySearch(arr, mid+1, r, key);
-	
-	
-	
+	else return BinarySearch(arr, mid+1, r, key);	
 	
 }
 int main(){
@@ -21,7 +18,6 @@ int main(){
 	int key;
 	cin>>key;
 	
-	cout<<BinarySearch(arr, 0, n-1, key)<<endl;
-	
+	cout<<BinarySearch(arr, 0, n-1, key)<<endl;	
  
 }
