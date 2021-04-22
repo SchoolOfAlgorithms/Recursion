@@ -13,11 +13,10 @@ int BinarySearch(int *arr, int l, int r, int key){
 }
 int main(){
 	
-	int arr[]={1,2,3,4,5,6,7,8,9,10};
+    int arr[]={1,2,3,4,5,6,7,8,9,10};
     int n=sizeof(arr)/sizeof(int);
-	int key;
-	cin>>key;
-	
-	cout<<BinarySearch(arr, 0, n-1, key)<<endl;	
+    int key;
+    cin>>key;	
+    cout<<BinarySearch(arr, 0, n-1, key)<<endl;	
  
 }
